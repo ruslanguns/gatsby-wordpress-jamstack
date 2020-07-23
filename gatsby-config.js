@@ -6,5 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-twitter`,
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'WPGraphQL',
+        fieldName: 'wpgraphql',
+        url: 'https://cms.iclick.tk/index.php?graphql'
+      }
+    }
+  ],
 }
