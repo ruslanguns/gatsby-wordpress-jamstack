@@ -26,3 +26,29 @@ main {
   max-width: 70ch;
   width: 90vw;
 }
+
+.search__container {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.search__input {
+  height: 25px;
+  width: 300px;
+  max-width: 60vw;
+  font-size: 16px;
+}
+
+.search__button {
+  height: 31px;
+  margin: 0px;
+  max-width: 30vw;
+  background-color: darkblue;
+  cursor: pointer;
+  color: white;
+  border: 0px;
+  font-size: 16px;
+  padding: 5px;
+}

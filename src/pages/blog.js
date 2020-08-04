@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
+import Search from '../components/search'
 
 export const query = graphql`
   query {
@@ -17,11 +18,11 @@ export const query = graphql`
   }
 `
 
-const Blog = ({data}) => {
+const Blog = ({data, location}) => {
   const posts = data.wpgraphql.posts.nodes
-
   return (
     <Layout>
+      <Search location={location}/>
       {
         posts.map(post => (
           <article key={ post.id }>

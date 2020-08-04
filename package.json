@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -15,9 +15,11 @@
   },
   "dependencies": {
     "@wordpress/block-library": "^2.22.2",
+    "axios": "^0.19.2",
     "gatsby": "^2.23.12",
     "gatsby-plugin-twitter": "^2.3.10",
     "gatsby-source-graphql": "^2.6.2",
+    "query-string": "^6.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
